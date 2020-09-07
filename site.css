@@ -1,0 +1,145 @@
+div.container3 {
+    height: 10em;
+    position: relative
+}
+    /* 1 */
+    div.container3 p {
+        margin: 0;
+        position: absolute; /* 2 */
+        top: 50%; /* 3 */
+        transform: translate(0, -50%)
+    }
+
+
+
+.container-classcenter {
+    background-image: url("https://cdn.oneesports.gg/wp-content/uploads/2020/01/LoL_100Thieves-1024x681.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1900px;
+    height: 500px;
+    border: none;
+}
+
+.container-classbottom {
+    background-image: url("https://i0.wp.com/thegamehaus.com/wp-content/uploads/2018/08/Featured-Image.jpg?fit=626%2C314&ssl=1");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1900px;
+    height: 400px;
+    border: none;
+}
+
+.container-classpage {
+    background-image: url("https://cdn.vox-cdn.com/thumbor/2HPeQV7mhOgNEzr1d1ue8SYryEM=/1400x0/filters:no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/19167652/ja115__1_.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1900px;
+    height: 1000px;
+    border: none;
+}
+
+.container-classlinks {
+    width: 800px;
+    height: 50px;
+    border: none;
+    font-family: fantasy;
+}
+
+h1 {
+    font-family: fantasy;
+    color: #DF0101;
+    text-align: left;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+    /* Links inside the navbar */
+    .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 10px 16px;
+        text-decoration: none;
+    }
+
+        /* Change background on mouse-over */
+        .navbar a:hover {
+            background: #ddd;
+            color: black;
+        }
+
+/* Main content */
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.addressfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+.centertwitch {
+    display: block;
+    margin-left: 700px;
+    margin-right: 0px;
+    width: 5%;
+}
+
+.appareltop {
+    background-image: url("https://cdn.shopify.com/s/files/1/3105/2262/files/1_998200d2-0f34-465f-992d-f4f2731f2fd4_1512x.jpg?v=1582505344");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1900px;
+    height: 1000px;
+    border: none;
+}
+
+.centertimer {
+    margin-left: 900px;
+    margin-right: 0px;
+    font-size: 2rem;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+}
+
+.left {
+    display: block;
+    margin-left: 50;
+    margin-right: 100;
+    width: 5%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}

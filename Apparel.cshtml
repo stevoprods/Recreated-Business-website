@@ -1,0 +1,138 @@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/css/site.css">
+    <style>
+    </style>
+    <title>Apparel</title>
+    <style>
+        .img-container {
+            text-align: center;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a asp-action="Index">Home</a>
+        <a asp-action="Apparel">Apparel</a>
+        <a asp-action="About">About</a>
+        <a asp-action="Partners">Partners</a>
+        <a asp-action="Faq">Faq</a>
+        <a asp-action="CheckoutForm">Checkout</a>
+        <a asp-action="Orders">Orders</a>
+    </div>
+    <div class="img-container">
+        <a asp-action="Index"><img src="https://geeks.bet/wp-content/uploads/2019/07/100-Thieves-Logo.png" height="100" width="100" /></a>
+    </div>
+    <p>
+        100 Thieves offers "apparel drops" which are limited time purchasability on 100 thieves brand clohing.<br />
+        the aparel that they offer are clothing such as hoodies, pants, shirts, and shorts etc. Normally, the business doesnt <br />
+        release actual prices of apparel until the actual apparel drop release. From a business perspective, if their apparel<br />
+        might be expensive it's probably best to keep the price unknown until the drop of the apparel because it makes customers <br />
+        go off impulse buying decisions. In the past, hoodies were around 80 dollars, hats ranged from 20-25 dollars, long sleeve<br />
+        were around 45-75 dollars, and t-shirts were around 35 dollars. One of their most popular sales are their jersey programs.<br />
+        Their Jersey's have been known to be sold out almost instantly just like most of their apparel. Their jerseys range from 80-95 dollars<br />
+        The biggest difference between 100 Thieves and their competitors is the type of brand they've built up with their apparel drops.<br />
+        Their apparel can be compared to other popular brands such as supreme, urban outfitters etc. The only similarity this organization<br />
+        has with their competitors is their jersey's they offer. Almost every large e-sport organization offers team jerseys of different color variations<br />
+        After deciding to purchase any apparel, you can choose between express delivery or normal delivery. the price difference is around 10 <br />
+        dollars for express delivery.
+    </p>
+    <div class="img-container">
+        <a asp-action="CheckoutForm">
+            <img src="https://cdn.shopify.com/s/files/1/3105/2262/files/1_998200d2-0f34-465f-992d-f4f2731f2fd4_1512x.jpg?v=1582505344" height="1300" width="2000" />
+        </a>
+    </div>
+
+    
+
+    <div class="img-container">
+        <a asp-action="CheckoutForm">
+            <img src="https://cdn.shopify.com/s/files/1/3105/2262/files/2_f2b4a78b-ff07-42c9-a82f-a7af74b9aa9b_2048x.jpg?v=1582505359" height="1300" width="2000" />
+        </a>
+    </div>
+
+
+    <div class="img-container">
+        <a asp-action="CheckoutForm">
+            <img src="https://cdn.shopify.com/s/files/1/3105/2262/files/3_9e8fb53a-a72b-4fbb-8a6f-6837ec1c108d_2048x.jpg?v=1582505376" height="1300" width="2000" />
+        </a>
+    </div>
+
+
+    <div class="img-container">
+        <a asp-action="CheckoutForm">
+            <img src="https://cdn.shopify.com/s/files/1/3105/2262/files/4_52454759-2b2f-4796-9991-3fa79f02bf2e_2048x.jpg?v=1582505389" height="1300" width="2000" />
+        </a>
+    </div>
+
+   
+
+    <div class="img-container">
+        <a asp-action="CheckoutForm">
+            <img src="https://cdn.shopify.com/s/files/1/3105/2262/files/5_8b605570-81e9-4c58-8ffa-b75332545b9a_2048x.jpg?v=1582505402" height="1300" width="2000" />
+        </a>
+    </div>
+
+   
+
+    <div class="img-container">
+        <a asp-action="CheckoutForm">
+            <img src="https://cdn.shopify.com/s/files/1/3105/2262/files/6_d4e2c25e-75dd-4ccb-8e60-10c780c87789_2048x.jpg?v=1582505420" height="1300" width="2000" />
+        </a>
+    </div>
+
+    
+
+    <div class="img-container">
+        <a asp-action="CheckoutForm">
+            <img src="https://cdn.shopify.com/s/files/1/3105/2262/files/7_48760871-02fa-4896-a0c7-9c46bc209185_2048x.jpg?v=1582505432" height="1300" width="2000" />
+        </a>
+    </div>
+    
+    <div class="img-container">
+        <a asp-action="CheckoutForm">
+            <img src="https://cdn.shopify.com/s/files/1/3105/2262/files/8_390c9477-275c-4d18-8d20-647abf835f34_2048x.jpg?v=1582505445" height="1300" width="2000" />
+        </a>
+    </div>
+   
+    <div>
+        <p id="demo" class="centertimer">Time left</p>
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Jul 4, 2020 15:37:25").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function () {
+
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="demo"
+                document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                    + minutes + "m " + seconds + "s ";
+
+                // If the count down is over, write some text
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+    </div>
+</body>
+</html>

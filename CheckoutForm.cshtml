@@ -1,0 +1,79 @@
+@model _100_Thieves.Models.CustomerCheckout
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/css/site.css" />
+    <title>Checkout</title>
+    <style>
+        .img-container {
+            text-align: center;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a asp-action="Index">Home</a>
+        <a asp-action="Apparel">Apparel</a>
+        <a asp-action="About">About</a>
+        <a asp-action="Partners">Partners</a>
+        <a asp-action="Faq">Faq</a>
+        <a asp-action="CheckoutForm">Checkout</a>
+        <a asp-action="Orders">Orders</a>
+    </div>
+    <div class="img-container">
+        <a asp-action="Index"><img src="https://geeks.bet/wp-content/uploads/2019/07/100-Thieves-Logo.png" height="100" width="100" /></a>
+    </div>
+    <form asp-action="CheckoutForm" method="post">
+        <div asp-validation-summary="All"></div>
+        <p>
+            <label asp-for="Name">Name on Card:</label>
+            <input asp-for="Name"/>
+        </p>
+        <p>
+            <label asp-for="CreditCard">Credit Card Number:</label>
+            <input asp-for="CreditCard"/>
+        </p>
+        <p>
+            <label asp-for="CVC">CVC</label>
+            <input asp-for="CVC"/>
+        </p>
+        <p>
+            <label asp-for="ExpirationDate">Exp Date</label>
+            <input type="month" min="2020-07" asp-for="ExpirationDate" />
+        </p>
+        <p>
+            <label asp-for="State">State:</label>
+            <input asp-for=" State"/>
+        </p>
+        <p>
+            <label asp-for="City">City:</label>
+            <input asp-for="City"/>
+        </p>
+        <p>
+            <label asp-for="ZipCode">Zip Code:</label>
+            <input asp-for="ZipCode"/>
+        </p>
+        <p>
+            <label asp-for="Address"> Address:</label>
+            <input asp-for="Address"/>
+        </p>
+        <p>
+            <label>What kind of delivery</label>
+            <select asp-for="DeliveryType">
+                <option value="">Choose an option</option>
+                <option value="true">Express delivery</option>
+                <option value="true">Regular delivery</option>
+                <option value="false">Cancel order</option>
+            </select>
+
+        </p>
+        <button type="submit">Order Now</button>
+    </form>
+
+</body>
+</html>

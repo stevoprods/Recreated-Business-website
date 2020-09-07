@@ -1,0 +1,42 @@
+@model _100_Thieves.Models.CustomerCheckout
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/css/site.css" />
+    <style></style>
+    <title>Home</title>
+    <style>
+        .img-container {
+            text-align: center;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="img-container">
+        <a asp-action="Index"><img src="https://geeks.bet/wp-content/uploads/2019/07/100-Thieves-Logo.png" height="100" width="100" /></a>
+    </div>
+    <div>
+        <p>
+            
+            @if (Model.DeliveryType == true)
+            {
+
+                @:Your Order is being processed!
+            }
+
+            else
+            {
+                @:your Order is being canceled!
+            }
+            <a asp-action="Index">Home</a>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+@model IEnumerable<_100_Thieves.Models.CustomerCheckout>
+@{ 
+    Layout = null;
+ }
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Orders</title>
+    <link rel="stylesheet" type="text/css" href="/css/site.css" />
+</head>
+<body>
+    <div class="navbar">
+        <a asp-action="Index">Home</a>
+        <a asp-action="Apparel">Apparel</a>
+        <a asp-action="About">About</a>
+        <a asp-action="Partners">Partners</a>
+        <a asp-action="Faq">Faq</a>
+        <a asp-action="CheckoutForm">Checkout</a>
+        <a asp-action="Orders">Orders</a>
+    </div>
+    <div class="img-container">
+        <a asp-action="Index"><img src="https://geeks.bet/wp-content/uploads/2019/07/100-Thieves-Logo.png" height="100" width="100" /></a>
+    </div>
+    <div>
+        <h2>List of Orders</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>State</th>
+                    <th>City</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (_100_Thieves.Models.CustomerCheckout r in Model)
+                {
+                    <tr>
+                        <td>@r.Name</td>
+                        <td>@r.State</td>
+                        <td>@r.City</td>
+                        <td>@r.Address</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
